@@ -1,4 +1,11 @@
 $(document).ready(function ($) {
+
+	$(window).on('load',()=>{
+		setTimeout(()=>{
+			$('#preloader').css("display","none")
+		},3000)
+	})
+
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		margin: 10,
@@ -27,4 +34,6 @@ $(document).ready(function ($) {
     $('.stars').html(repeatStringNumTimes('<i class="fa-solid fa-star" style="color: #e5a50a;"></i>',4))
 
     
+
+	
 });
